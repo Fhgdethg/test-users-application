@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #3c3c3c white;
+}
+
+body,
+body * {
+	@apply m-0 p-0 box-border;
+}
+
+ul {
+	@apply list-none;
+}
+
+a {
+	@apply decoration-[none];
+}
+
+a,
+img,
+input,
+button {
+	@apply block;
+}
+
+.container {
+	@apply max-w-[1170px] m-[0_auto];
+}
+
+::-webkit-scrollbar {
+	@apply w-[5px] bg-inherit;
+}
+
+::-webkit-scrollbar-track {
+	@apply border-[none];
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-darkGrayCol rounded-[15px] h-[15px];
+}

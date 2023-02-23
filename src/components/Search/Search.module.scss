@@ -1,0 +1,19 @@
+.search {
+	@apply bg-lightGrayCol flex items-center rounded-r-full rounded-l-full flex-[0_1_450px] duration-300;
+
+	&:hover {
+		@apply shadow;
+	}
+
+	button {
+		@apply bg-lightGrayCol rounded-l-full p-[9px_5px_9px_9px];
+
+		img {
+			@apply w-[20px] h-[20];
+		}
+	}
+
+	input {
+		@apply outline-none bg-lightGrayCol p-[9px_9px_9px_5px] rounded-r-full placeholder:text-middleGrayCol placeholder:text-[18px] text-middleGrayCol text-[18px];
+	}
+}

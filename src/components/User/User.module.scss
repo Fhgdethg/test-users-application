@@ -1,0 +1,45 @@
+.userWrapper {
+	@apply border-[2px] border-lightGrayCol p-[15px] rounded-[8px] text-[18px] text-darkGrayCol grid grid-cols-userGrid;
+
+	.userName {
+		@apply flex items-center gap-[7px];
+
+		.photo {
+			@apply w-[20px] h-[20px] rounded-full bg-darkGrayCol;
+		}
+
+		.execute {
+			@apply line-through;
+		}
+
+		.see {
+			@apply text-[8px];
+		}
+	}
+
+	.userOptionHandler {
+		@apply flex items-center justify-center cursor-pointer;
+
+		.checkItemLable {
+			@apply rounded-[2px] border-[2px] border-middleGrayCol flex items-center justify-center relative h-[15px] w-[15px] z-[2];
+
+			.checkItem {
+				@apply opacity-0 cursor-pointer;
+			}
+
+			.checkItem:checked + span {
+				@apply bg-middleGrayCol w-[8px] h-[8px] absolute rounded-[1px];
+			}
+		}
+
+		img {
+			@apply w-[20px];
+		}
+
+		@media screen and (max-width: 600px) {
+			& {
+				@apply grid-cols-userTabletGrid text-[16px];
+			}
+		}
+	}
+}

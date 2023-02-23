@@ -1,0 +1,7 @@
+.save {
+	@apply bg-darkGrayCol text-whiteCol text-[18px] p-[16px_30px] rounded-[12px] min-w-[200px] mt-[40px] duration-300;
+
+	&:hover {
+		@apply scale-[.97];
+	}
+}

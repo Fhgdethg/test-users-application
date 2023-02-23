@@ -1,0 +1,29 @@
+.menuWrapper {
+	@apply bg-lightGrayCol p-[15px] rounded-[8px] text-[18px] text-middleGrayCol grid grid-cols-userGrid mb-[10px] gap-x-[7px];
+
+	.name {
+		@apply flex items-center gap-[7px];
+
+		img {
+			@apply w-[20px] h-auto;
+		}
+	}
+
+	.menuEndpoint {
+		@apply text-center flex justify-center;
+
+		&:nth-child(5) {
+			@apply duration-300 cursor-pointer text-darkGrayCol;
+
+			&:hover {
+				@apply text-darkOpacityGrayCol;
+			}
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		& {
+			@apply grid-cols-userTabletGrid text-[12px];
+		}
+	}
+}

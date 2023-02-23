@@ -1,0 +1,35 @@
+.popupFone {
+	@apply flex justify-center items-center fixed w-full h-full bg-darkOpacityGrayCol top-0 left-0 z-[5];
+
+	.popup {
+		@apply bg-whiteCol z-[6] p-10  absolute rounded-[10px] w-[70vw];
+
+		.btnWrapper {
+			@apply flex justify-end mb-[20px];
+
+			button {
+				@apply p-2 rounded border-[2px] border-middleGrayCol text-middleGrayCol duration-300;
+
+				&:hover {
+					@apply bg-middleGrayCol text-whiteCol;
+				}
+			}
+		}
+
+		.title {
+			@apply text-[30px] text-darkGrayCol text-center mb-[30px];
+		}
+
+		.info {
+			@apply text-[20px] text-darkGrayCol;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		& {
+			.popup {
+				@apply w-[95vw];
+			}
+		}
+	}
+}

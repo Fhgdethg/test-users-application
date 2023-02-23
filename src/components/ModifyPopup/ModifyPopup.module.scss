@@ -1,0 +1,51 @@
+.popupFone {
+	@apply flex justify-center items-center fixed w-full h-full bg-darkOpacityGrayCol top-0 left-0 z-[5];
+
+	.popup {
+		@apply bg-whiteCol z-[6] p-10  absolute rounded-[10px] w-[70vw];
+
+		.btnWrapper {
+			@apply flex justify-end mb-[20px];
+
+			button {
+				@apply p-2 rounded border-[2px] border-middleGrayCol text-middleGrayCol duration-300;
+
+				&:hover {
+					@apply bg-middleGrayCol text-whiteCol;
+				}
+			}
+		}
+
+		.title {
+			@apply text-[30px] text-darkGrayCol text-center mb-[30px];
+		}
+
+		.search {
+			@apply bg-lightGrayCol flex items-center rounded-r-full rounded-l-full flex-[0_1_450px] duration-300 gap-[20px] pl-[10px];
+
+			&:hover {
+				@apply shadow;
+			}
+
+			button {
+				@apply bg-lightGrayCol rounded-l-full p-[9px_5px_9px_9px] duration-300 text-middleGrayCol;
+			}
+
+			button:hover {
+				@apply text-darkGrayCol;
+			}
+
+			input {
+				@apply outline-none bg-lightGrayCol p-[9px_9px_9px_5px] rounded-r-full placeholder:text-middleGrayCol placeholder:text-[18px] text-middleGrayCol text-[18px] w-full;
+			}
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		& {
+			.popup {
+				@apply w-[95vw];
+			}
+		}
+	}
+}

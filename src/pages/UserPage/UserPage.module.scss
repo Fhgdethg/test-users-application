@@ -1,0 +1,52 @@
+.userPage {
+	@apply px-[10px];
+
+	header {
+		@apply p-[27px_0_40px];
+
+		h1 {
+			@apply text-darkGrayCol text-[40px] mb-[10px];
+		}
+
+		p {
+			@apply text-middleGrayCol text-[18px];
+		}
+	}
+
+	.usersSection {
+		@apply pb-[30px];
+
+		.usersCount {
+			@apply flex justify-between items-center pb-[36px] gap-[15px];
+
+			p {
+				@apply text-darkGrayCol text-[25px] flex items-center gap-[4px];
+
+				span {
+					@apply text-middleGrayCol text-[18px] block;
+				}
+			}
+		}
+
+		.usersWrapper {
+			@apply flex flex-col gap-[10px] h-[400px] overflow-auto pr-[3px];
+
+			&::-webkit-scrollbar {
+				width: 3px;
+				background: inherit;
+			}
+
+			&::-webkit-scrollbar-track {
+				border: none;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				@apply bg-darkGrayCol rounded-[15px] h-[15px];
+			}
+
+			p {
+				@apply text-[18px] text-middleGrayCol;
+			}
+		}
+	}
+}
